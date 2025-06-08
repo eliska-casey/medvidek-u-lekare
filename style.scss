@@ -1,0 +1,192 @@
+$primary-yellow: #F9D030;
+$primary-pink: #F62AA0;
+$primary-green: #B8EE30;
+$primary-blue: #26DFD0;
+$font-headings: "League Spartan", sans-serif;
+$font: "Libre Baskerville", serif;
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+    margin: 0;
+    
+}
+
+.header {
+    background-color: $primary-blue;
+    height: 10%;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: $font;
+    color: white;
+    padding: 20px 40px;
+    margin: 0;
+    gap: 10px;
+}
+
+.menu__item {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: white;
+}
+
+
+.hero {
+    height: 80vh;
+    width: 100%;
+    background-image: url(/fotky-na-web/uvodni-foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "-" "hero__title" "hero__button";
+     @media (max-width: 500px) {
+        height: 60vh;
+    }
+    @media (min-width: 800px) {
+        
+    }
+    
+}
+
+.hero__title {
+    margin: 0;
+    font-family: $font-headings;
+    color: $primary-yellow;
+    font-size: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    grid-area: hero__title;
+    align-self: end;
+    justify-self: center;
+}
+
+.hero__button {
+    width: fit-content;
+    padding: 20px;
+    font-size: 24px;
+    font-family: $font;
+    color: white;
+    background-color: $primary-pink;
+    border-radius: 15px;
+    border: none;
+    grid-area: hero__button;
+    align-self: start;
+    justify-self: center;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: $primary-pink;
+    color: white;
+    font-family: $font;
+    font-style: italic;
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+    height: 10%;
+}
+
+.grid__programmes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    grid-auto-flow: column;
+    gap:0
+}
+
+
+.grid__picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    color: white;
+    font-family: $font;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    margin: 0;
+    &--blue {background-color: $primary-blue;}
+    &--yellow {background-color: $primary-yellow;}
+    &--pink {background-color: $primary-pink;}
+    &--green {background-color: $primary-green;}
+}
+
+.grid__item a {
+    text-decoration: none;
+    color: white;
+}
+
+.title__heading {
+    
+    font-family: $font-headings;
+    color: $primary-yellow;
+    text-align: center;
+    font-size: 64px;
+}
+
+.info {
+    display: flex;
+    &__symbol {
+        width: 100px;
+        height: 100px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 10px;
+        font-family: $font;
+        font-style: italic;
+        align-items: center;
+        font-size: 20px;
+         position: relative;
+    }
+
+    &__button {
+        background-color: $primary-yellow;
+        text-decoration: none;
+        color: black;
+        font-family: $font;
+        font-size: 20px;
+        display: flex;
+        gap: 10px;
+        padding: 5px;
+        position: absolute;
+        bottom: 10px;    
+        right: 10px;   
+    }
+}
+
+.button__arrow {
+    width: 20px;
+    height: 20px;
+}
+
+
+.info__description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: $primary-green;
+    width: 100%;
+    padding: 40px 30px; 
+}
+

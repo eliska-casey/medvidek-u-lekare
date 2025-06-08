@@ -152,12 +152,11 @@ body {
 
     &__item {
         display: flex;
-        gap: 10px;
+        gap: 20px;
         font-family: $font;
         font-style: italic;
         align-items: center;
         font-size: 20px;
-         position: relative;
     }
 
     &__button {
@@ -185,8 +184,24 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    background-color: $primary-green;
     width: 100%;
-    padding: 40px 30px; 
+    padding: 40px; 
+    position: relative;
+
+    &--green {
+    background-color: $primary-green;
+    }
+
+    &--blue {
+    background-color: $primary-blue;
+    }
+
+    &--yellow {
+    background-color: $primary-yellow;
+    }
+
+    &--pink {
+    background-color: $primary-pink;
+    }
 }
 

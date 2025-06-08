@@ -154,12 +154,11 @@ body {
 }
 .info__item {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   font-family: "Libre Baskerville", serif;
   font-style: italic;
   align-items: center;
   font-size: 20px;
-  position: relative;
 }
 .info__button {
   background-color: #F9D030;
@@ -184,7 +183,19 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  background-color: #B8EE30;
   width: 100%;
-  padding: 40px 30px;
+  padding: 40px;
+  position: relative;
+}
+.info__description--green {
+  background-color: #B8EE30;
+}
+.info__description--blue {
+  background-color: #26DFD0;
+}
+.info__description--yellow {
+  background-color: #F9D030;
+}
+.info__description--pink {
+  background-color: #F62AA0;
 }/*# sourceMappingURL=style.css.map */

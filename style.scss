@@ -141,6 +141,37 @@ body {
     color: $primary-yellow;
     text-align: center;
     font-size: 64px;
+
+    &--left {
+        text-align: left;
+        padding-left: 40px;
+    }
+
+    &--right {
+        text-align: right;
+        padding-right: 60px;
+        padding-top: 60px;
+    }
+}
+
+.title__subheading {
+    font-family: $font-headings;
+    font-weight: 400;
+    font-size: 48px;
+    padding-left: 40px;;
+}
+
+.title__subsubheading {
+    font-weight: normal;
+    font-family: $font;
+    font-style: italic;
+    font-size: 24px;
+    padding-left: 40px;
+
+    &--bold {
+    font-style: normal;
+    font-weight: bold;
+    }
 }
 
 .info {
@@ -200,8 +231,88 @@ body {
     background-color: $primary-yellow;
     }
 
-    &--pink {
-    background-color: $primary-pink;
-    }
 }
 
+.teacher-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1fr);
+    grid-template-areas: "title photo" "info photo";
+    margin-left: 30px;
+}
+
+.title {
+    grid-area: title;
+}
+
+.teacher-info__text {
+    grid-area: info;
+    padding: 40px;
+    padding-top: 60px;
+    font-family: $font;
+    line-height: 2;
+    font-size: 24px;
+}
+
+.teacher-info__photo {
+    grid-area: photo;
+    width: auto;
+    height: 600px;
+    border-radius: 100%;
+    padding: 40px 0;
+    align-self: center;
+    justify-self: center;
+}
+
+
+.price {
+    margin-right: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "photo title" "photo info" "photo button";
+}
+
+.price__photo {
+    grid-area: photo;
+    height: 600px;
+    width: auto;
+    border-radius: 100%;
+    padding: 40px 0;
+    align-self: center;
+    justify-self: center;
+}
+
+.price__info {
+    grid-area: info;
+    padding: 40px;
+    font-family: $font;
+    line-height: 2;
+    font-size: 24px;
+    text-align: right;
+}
+
+.price__button {
+    grid-area: button;
+    width: 250px;
+    height: 90px;
+    background-color: $primary-pink;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 24px;
+    font-family: $font;
+    justify-self: right;
+    margin-right: 40px;
+}
+
+.references__text {
+    font-family: $font;
+    font-size: 26px;
+    padding: 0 40px;
+    font-style: italic;
+    
+    &--second {
+        padding-top: 60px;
+    }
+}

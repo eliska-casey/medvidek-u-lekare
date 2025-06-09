@@ -144,6 +144,34 @@ body {
   text-align: center;
   font-size: 64px;
 }
+.title__heading--left {
+  text-align: left;
+  padding-left: 40px;
+}
+.title__heading--right {
+  text-align: right;
+  padding-right: 60px;
+  padding-top: 60px;
+}
+
+.title__subheading {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  padding-left: 40px;
+}
+
+.title__subsubheading {
+  font-weight: normal;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  font-size: 24px;
+  padding-left: 40px;
+}
+.title__subsubheading--bold {
+  font-style: normal;
+  font-weight: bold;
+}
 
 .info {
   display: flex;
@@ -196,6 +224,85 @@ body {
 .info__description--yellow {
   background-color: #F9D030;
 }
-.info__description--pink {
+
+.teacher-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1fr);
+  grid-template-areas: "title photo" "info photo";
+  margin-left: 30px;
+}
+
+.title {
+  grid-area: title;
+}
+
+.teacher-info__text {
+  grid-area: info;
+  padding: 40px;
+  padding-top: 60px;
+  font-family: "Libre Baskerville", serif;
+  line-height: 2;
+  font-size: 24px;
+}
+
+.teacher-info__photo {
+  grid-area: photo;
+  width: auto;
+  height: 600px;
+  border-radius: 100%;
+  padding: 40px 0;
+  align-self: center;
+  justify-self: center;
+}
+
+.price {
+  margin-right: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "photo title" "photo info" "photo button";
+}
+
+.price__photo {
+  grid-area: photo;
+  height: 600px;
+  width: auto;
+  border-radius: 100%;
+  padding: 40px 0;
+  align-self: center;
+  justify-self: center;
+}
+
+.price__info {
+  grid-area: info;
+  padding: 40px;
+  font-family: "Libre Baskerville", serif;
+  line-height: 2;
+  font-size: 24px;
+  text-align: right;
+}
+
+.price__button {
+  grid-area: button;
+  width: 250px;
+  height: 90px;
   background-color: #F62AA0;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 24px;
+  font-family: "Libre Baskerville", serif;
+  justify-self: right;
+  margin-right: 40px;
+}
+
+.references__text {
+  font-family: "Libre Baskerville", serif;
+  font-size: 26px;
+  padding: 0 40px;
+  font-style: italic;
+}
+.references__text--second {
+  padding-top: 60px;
 }/*# sourceMappingURL=style.css.map */

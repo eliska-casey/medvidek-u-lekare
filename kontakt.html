@@ -1,0 +1,92 @@
+---
+layout: moje-sablona.njk
+title: Kontakt
+---
+<div class="main">
+    <div class="title">
+        <h1 class="title__heading title__heading--left">Kontakt</h1>
+    </div>
+
+    <form class="contact" action="">
+        <div class="form__name">
+            <label for="jmeno" class="label__name">Jméno</label>
+            <input type="text" name="jmeno" id="jmeno" size="50">
+        </div>
+
+        <div class="form__surname">
+            <label for="prijmeni" class="label__surname">Příjmení</label>
+            <input type="text" name="prijmeni" id="prijmeni">
+        </div>
+
+        <div class="form__tel">
+            <label for="tel" class="label__tel">Telefon</label>
+            <input type="tel" name="tel" id="tel" placeholder=" +420">
+        </div>
+
+        <div class="form__email">
+            <label for="email" class="label__email">E-mail</label>
+            <input type="email" name="email" id="email" size="50">
+        </div>
+
+        <div class="form__classes">
+        <label for="tridy" class="label__classes">Počet tříd</label>
+            <select name="tridy" id="tridy">
+                <option></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+        <div class="form__number">
+        <label for="pocet" class="label__number">Počet dětí</label>
+            <select name="pocet" id="pocet">
+                <option value=""></option>
+            </select>
+
+            <script>
+                const select = document.getElementById('pocet');
+                for (let i = 1; i <= 30; i++) {
+                    const option = document.createElement('option');
+                    option.value = i;
+                    option.textContent = i;
+                    select.appendChild(option);
+                }
+            </script>
+        </div>
+
+        <div class="form__age">
+            <label for="vek" class="label__age">Věk dětí</label>
+            <select name="vek" id="vek">
+                <option></option>
+                <option value="3">3 roky</option>
+                <option value="4">4 roky</option>
+                <option value="5">5 let</option>
+                <option value="6">6 let</option>
+            </select>
+        </div>
+
+        <p class="form__address">Adresa MŠ</p>
+
+        <div class="form__street">
+            <label for="ulice" class="label__street">Ulice</label>
+            <input type="text" name="ulice" id="ulice" size="50">
+        </div>
+
+        <div class="form__town">
+            <label for="mesto" class="label__town">Město</label>
+            <input type="text" name="mesto" id="mesto">
+        </div>
+
+        <div class="form__psc">
+            <label for="psc" class="label__psc">PSČ</label>
+            <input type="number" name="psc" id="psc">
+        </div>
+
+        <div class="form__note">
+            <label for="poznamka" class="label__note">Poznámka</label>
+            <textarea cols="180"></textarea>
+        </div>
+    </form>
+</div>

@@ -252,6 +252,7 @@ html, body {
 
 .info {
   display: flex;
+  position: relative;
   flex-direction: column;
 }
 .info__symbol {
@@ -294,7 +295,6 @@ html, body {
 .info__description {
   width: 100%;
   padding: 40px;
-  position: relative;
 }
 @media (min-width: 768px) {
   .info__description {

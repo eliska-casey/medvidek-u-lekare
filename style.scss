@@ -233,6 +233,7 @@ html, body {
 
 .info {
     display: flex;
+    position: relative;
     flex-direction: column;
     &__symbol {
         width: 100px;
@@ -282,7 +283,6 @@ html, body {
     
     width: 100%;
     padding: 40px; 
-    position: relative;
 
     &--green {
     background-color: $primary-green;
@@ -577,7 +577,8 @@ label {
     &:hover {
         cursor:pointer;
     }
-     @media (min-width: 768px) {
+    
+    @media (min-width: 768px) {
     font-size: 22px;}
 
     @media (min-width: 1025px) {

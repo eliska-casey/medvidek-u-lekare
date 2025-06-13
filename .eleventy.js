@@ -5,7 +5,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("fotky-na-web");
   eleventyConfig.addPassthroughCopy("fotky-na-web-214x285px");
   eleventyConfig.addPassthroughCopy("icons");
-  eleventyConfig.addPassthroughCopy("css"); // <- důležité!
+  eleventyConfig.addPassthroughCopy("css"); 
+  eleventyConfig.addPassthroughCopy("glide.min.js");// <- důležité!
   // eleventyConfig.addPassthroughCopy("style.css"); // Nepotřebuješ, pokud styl je v css/style.css
 
   return {

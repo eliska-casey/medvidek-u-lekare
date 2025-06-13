@@ -329,7 +329,7 @@ html, body {
   line-height: 2;
   font-size: 18px;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .teacher-info__text {
     font-size: 22px;
   }
@@ -342,12 +342,22 @@ html, body {
 
 .teacher-info__photo {
   grid-area: photo;
-  max-width: 600px;
+  max-width: 300px;
   height: auto;
   border-radius: 100%;
   padding: 20px 0;
   align-self: center;
   justify-self: center;
+}
+@media (max-width: 768px) {
+  .teacher-info__photo {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1025px) {
+  .teacher-info__photo {
+    max-width: 600px;
+  }
 }
 
 .price {
@@ -367,12 +377,22 @@ html, body {
 
 .price__photo {
   grid-area: photo;
-  height: 600px;
-  width: auto;
+  height: auto;
+  max-width: 300px;
   border-radius: 100%;
   padding: 40px 0;
   align-self: center;
   justify-self: center;
+}
+@media (max-width: 768px) {
+  .price__photo {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1025px) {
+  .price__photo {
+    max-width: 600px;
+  }
 }
 
 .price__info {

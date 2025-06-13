@@ -200,16 +200,30 @@ html, body {
 .title__subheading {
     font-family: $font-headings;
     font-weight: 400;
-    font-size: 48px;
-    padding-left: 40px;;
+    font-size: 40px;
+    padding-left: 40px;
+    
+    @media (max-width: 768px) {
+    font-size: 44px;
+    }
+
+    @media (min-width: 1025px) {
+    font-size: 48px;}
 }
 
 .title__subsubheading {
     font-weight: normal;
     font-family: $font;
     font-style: italic;
-    font-size: 24px;
+    font-size: 20px;
     padding-left: 40px;
+
+    @media (max-width: 768px) {
+    font-size: 22px;
+    }
+
+    @media (min-width: 1025px) {
+    font-size: 24px;}
 
     &--bold {
     font-style: normal;

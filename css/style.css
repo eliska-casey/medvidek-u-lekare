@@ -214,16 +214,36 @@ html, body {
 .title__subheading {
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 40px;
   padding-left: 40px;
+}
+@media (max-width: 768px) {
+  .title__subheading {
+    font-size: 44px;
+  }
+}
+@media (min-width: 1025px) {
+  .title__subheading {
+    font-size: 48px;
+  }
 }
 
 .title__subsubheading {
   font-weight: normal;
   font-family: "Libre Baskerville", serif;
   font-style: italic;
-  font-size: 24px;
+  font-size: 20px;
   padding-left: 40px;
+}
+@media (max-width: 768px) {
+  .title__subsubheading {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1025px) {
+  .title__subsubheading {
+    font-size: 24px;
+  }
 }
 .title__subsubheading--bold {
   font-style: normal;

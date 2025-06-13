@@ -617,6 +617,7 @@ label {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 200px; // výška jednoho řádku
     gap: 10px;
+    margin: 10px;
 
     @media (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
@@ -624,7 +625,7 @@ label {
 
     @media (min-width: 1025px) {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: repeat(2, 1fr);
     }
 }
 
@@ -637,6 +638,6 @@ label {
 .gallery__preview--tall {
   grid-row: span 2;
    @media (min-width: 1025px) {
-    grid-row: span1;}
+    grid-row: span 1;}
 }
 

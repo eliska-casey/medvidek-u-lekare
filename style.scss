@@ -62,7 +62,7 @@ html, body {
     @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    
+    padding-left: 20px;
     }
 }
 
@@ -438,16 +438,17 @@ html, body {
     border-radius: 20px;
     font-family: $font;
     display: grid;
-    gap: 30px;
+    gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(6, auto-fit);
+    grid-template-rows: repeat(7, auto-fit);
     grid-template-areas: 
     "name surname tel"
     "email email email"
     "classes number age"
     "address address address"
     "street town psc"
-    "note note note";
+    "note note note"
+    "submit submit submit";
     
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
@@ -463,13 +464,23 @@ html, body {
       "street"
       "town"
       "psc"
-      "note";
+      "note"
+      "submit";
   }
 
 }
 
 label {
     display: block;
+    padding-left: 5px;
+    margin-top: 5px;
+    font-size: 20px;
+
+    @media (min-width: 768px) {
+    font-size: 22px;}
+
+    @media (min-width: 1025px) {
+    font-size: 24px;}
 }
 
 .form__name {
@@ -520,6 +531,33 @@ label {
     grid-area: note;
 }
 
+.form__address {
+    font-size: 24px;
+}
+
+.form__submit {
+    grid-area: submit;
+    justify-self: center;
+}
+
+.form__submit-button {
+    background-color: $primary-pink;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-family: $font;
+    border: $primary-pink;
+    border-radius: 20px;
+    &:hover {
+        cursor:pointer;
+    }
+     @media (min-width: 768px) {
+    font-size: 22px;}
+
+    @media (min-width: 1025px) {
+    font-size: 24px;}
+}
+
 .contact input, textarea {
     background-color: $primary-blue;
     border: $primary-blue;
@@ -541,10 +579,6 @@ label {
     margin-top: 10px;
 }
 
-.contact label {
-    padding-left: 5px;
-    margin-top: 10px;
-}
 
 .contact option {
     font-family: $font;

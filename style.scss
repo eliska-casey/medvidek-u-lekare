@@ -27,29 +27,71 @@ html, body {
 
 .menu {
     list-style: none;
-    display: flex;
-    justify-content: space-between;
     font-family: $font;
     color: white;
-    padding: 20px 40px;
     margin: 0;
-    gap: 10px;
+    display: none;
+    padding: 0;
+    @media (min-width: 1025px) {
+    display: flex !important;
+    justify-content: space-between;
+    padding: 15px 25px;
+    gap: 10px;}
 }
 
 .menu__item {
     text-decoration: none;
+    font-size: 20px;
+    @media (min-width: 768px) {
+    font-size: 22px;
+    
+    }
+
+    @media (min-width: 1025px) {
     font-size: 24px;
     font-weight: bold;
+    }
 }
 
 .menu__link {
+    display: block;
     text-decoration: none;
     color: white;
+    padding: 20px;
+    @media (min-width: 768px) {
+        padding: 10px;
+    }
+}
+
+.menu__link:hover {
+    background-color: $primary-pink;
+}
+
+.menu__checkbox {
+    position: absolute;
+    left: -9999px;
+}
+
+.menu__checkbox:checked ~ .menu {
+    display: block;
+}
+
+.menu__toggler {
+    cursor: pointer;
+    @media (min-width: 1025px) {
+        display: none;
+    }
+}
+
+.menu__icon {
+    height: 40px;
+    width: 40px;
+    filter: brightness(0) invert(1);
 }
 
 
 .hero {
-    height: 80vh;
+    min-height: 100%;
     width: 100%;
     background-image: url(/fotky-na-web/uvodni-foto.jpg);
     background-repeat: no-repeat;
@@ -103,9 +145,16 @@ html, body {
     font-family: $font;
     font-style: italic;
     text-align: center;
-    padding: 15px;
-    font-size: 30px;
+    padding: 10px;
+    font-size: 20px;
     width: 100%;
+    max-width: 100%;
+    @media (min-width: 768px) {
+        font-size: 24px;
+    }
+    @media (min-width: 1025px) {
+        font-size: 26px;
+    }
 }
 
 .grid__programmes {
@@ -318,7 +367,7 @@ html, body {
     "photo";
 
    
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 

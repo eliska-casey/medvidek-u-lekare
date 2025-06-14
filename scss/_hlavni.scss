@@ -1,7 +1,4 @@
-$primary-yellow: #F9D030;
-$primary-pink: #F62AA0;
-$primary-green: #B8EE30;
-$primary-blue: #26DFD0;
+@use 'colours';
 $font-headings: "League Spartan", sans-serif;
 $font: "Libre Baskerville", serif;
 html { box-sizing: border-box; }

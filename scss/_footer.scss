@@ -1,0 +1,20 @@
+@use 'colours';
+@use 'fonts';
+
+.footer {
+    background-color: $primary-pink;
+    color: white;
+    font-family: $font;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    max-width: 100%;
+    @media (min-width: 768px) {
+        font-size: 24px;
+    }
+    @media (min-width: 1025px) {
+        font-size: 26px;
+    }
+}

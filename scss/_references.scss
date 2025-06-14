@@ -1,0 +1,23 @@
+@use 'colours';
+@use 'fonts';
+
+
+
+.references__text {
+    font-family: $font;
+    padding: 0 40px;
+    font-style: italic;
+    
+    &--second {
+        padding-top: 60px;
+    }
+    
+    font-size: 20px;
+
+    @media (min-width: 768px) {
+        font-size: 24px;}
+    
+
+    @media (min-width: 1025px) {
+    font-size: 26px;}
+}

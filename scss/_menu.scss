@@ -1,0 +1,66 @@
+@use 'colours';
+@use 'fonts';
+
+.menu {
+    list-style: none;
+    font-family: $font;
+    color: white;
+    margin: 0;
+    display: none;
+    padding: 0;
+    @media (min-width: 1025px) {
+    display: flex !important;
+    justify-content: space-between;
+    padding: 15px 25px;
+    gap: 10px;}
+}
+
+.menu__item {
+    text-decoration: none;
+    font-size: 20px;
+    @media (min-width: 768px) {
+    font-size: 22px;
+    
+    }
+
+    @media (min-width: 1025px) {
+    font-size: 24px;
+    font-weight: bold;
+    }
+}
+
+.menu__link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    @media (min-width: 768px) {
+        padding: 10px;
+    }
+}
+
+.menu__link:hover {
+    background-color: $primary-pink;
+}
+
+.menu__checkbox {
+    position: absolute;
+    left: -9999px;
+}
+
+.menu__checkbox:checked ~ .menu {
+    display: block;
+}
+
+.menu__toggler {
+    cursor: pointer;
+    @media (min-width: 1025px) {
+        display: none;
+    }
+}
+
+.menu__icon {
+    height: 40px;
+    width: 40px;
+    filter: brightness(0) invert(1);
+}

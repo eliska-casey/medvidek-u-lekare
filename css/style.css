@@ -136,7 +136,6 @@ html, body {
   width: -moz-fit-content;
   width: fit-content;
   padding: 20px;
-  font-size: 24px;
   font-family: "Libre Baskerville", serif;
   color: white;
   background-color: #F62AA0;
@@ -146,6 +145,17 @@ html, body {
   align-self: start;
   justify-self: center;
   text-decoration: none;
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .hero__button {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1025px) {
+  .hero__button {
+    font-size: 24px;
+  }
 }
 
 .footer {

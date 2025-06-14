@@ -95,6 +95,28 @@ html, body {
   filter: brightness(0) invert(1);
 }
 
+.footer {
+  background-color: #F62AA0;
+  color: white;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  width: 100%;
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .footer {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1025px) {
+  .footer {
+    font-size: 26px;
+  }
+}
+
 .hero {
   min-height: 100%;
   width: 100%;
@@ -155,28 +177,6 @@ html, body {
 @media (min-width: 1025px) {
   .hero__button {
     font-size: 24px;
-  }
-}
-
-.footer {
-  background-color: #F62AA0;
-  color: white;
-  font-family: "Libre Baskerville", serif;
-  font-style: italic;
-  text-align: center;
-  padding: 10px;
-  font-size: 20px;
-  width: 100%;
-  max-width: 100%;
-}
-@media (min-width: 768px) {
-  .footer {
-    font-size: 24px;
-  }
-}
-@media (min-width: 1025px) {
-  .footer {
-    font-size: 26px;
   }
 }
 
@@ -255,71 +255,6 @@ html, body {
   .grid__link {
     font-size: 32px;
   }
-}
-
-.title__heading {
-  font-family: "League Spartan", sans-serif;
-  color: #F9D030;
-  text-align: center;
-  font-size: 64px;
-}
-.title__heading--left {
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .title__heading--left {
-    text-align: left;
-    padding-left: 60px;
-  }
-}
-.title__heading--right {
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .title__heading--right {
-    text-align: right;
-    padding-right: 60px;
-    padding-top: 60px;
-  }
-}
-
-.title__subheading {
-  font-family: "League Spartan", sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  padding-left: 40px;
-}
-@media (max-width: 768px) {
-  .title__subheading {
-    font-size: 44px;
-  }
-}
-@media (min-width: 1025px) {
-  .title__subheading {
-    font-size: 48px;
-  }
-}
-
-.title__subsubheading {
-  font-weight: normal;
-  font-family: "Libre Baskerville", serif;
-  font-style: italic;
-  font-size: 20px;
-  padding-left: 40px;
-}
-@media (max-width: 768px) {
-  .title__subsubheading {
-    font-size: 22px;
-  }
-}
-@media (min-width: 1025px) {
-  .title__subsubheading {
-    font-size: 24px;
-  }
-}
-.title__subsubheading--bold {
-  font-style: normal;
-  font-weight: bold;
 }
 
 .info {
@@ -421,10 +356,12 @@ html, body {
   font-family: "Libre Baskerville", serif;
   line-height: 2;
   font-size: 18px;
+  text-align: center;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .teacher-info__text {
     font-size: 22px;
+    text-align: left;
   }
 }
 @media (min-width: 1025px) {
@@ -439,18 +376,89 @@ html, body {
   height: auto;
   border-radius: 100%;
   padding: 20px 0;
+  margin-bottom: 20px;
   align-self: center;
   justify-self: center;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .teacher-info__photo {
     max-width: 400px;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1025px) {
   .teacher-info__photo {
     max-width: 600px;
   }
+}
+
+.title__heading {
+  font-family: "League Spartan", sans-serif;
+  color: #F9D030;
+  text-align: center;
+  font-size: 64px;
+}
+.title__heading--left {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .title__heading--left {
+    text-align: left;
+    padding-left: 60px;
+  }
+}
+.title__heading--right {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .title__heading--right {
+    text-align: right;
+    padding-right: 60px;
+    padding-top: 60px;
+  }
+}
+
+.title__subheading {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  padding-left: 40px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .title__subheading {
+    font-size: 44px;
+    text-align: left;
+  }
+}
+@media (min-width: 1025px) {
+  .title__subheading {
+    font-size: 48px;
+  }
+}
+
+.title__subsubheading {
+  font-weight: normal;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  font-size: 20px;
+  padding-left: 40px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .title__subsubheading {
+    font-size: 22px;
+    text-align: left;
+  }
+}
+@media (min-width: 1025px) {
+  .title__subsubheading {
+    font-size: 24px;
+  }
+}
+.title__subsubheading--bold {
+  font-style: normal;
+  font-weight: bold;
 }
 
 .price {
@@ -477,7 +485,7 @@ html, body {
   align-self: center;
   justify-self: center;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .price__photo {
     max-width: 400px;
   }
@@ -500,6 +508,7 @@ html, body {
   .price__info {
     font-size: 22px;
     text-align: right;
+    padding-right: 0;
   }
 }
 @media (min-width: 1025px) {
@@ -510,8 +519,7 @@ html, body {
 
 .price__button {
   grid-area: button;
-  width: 250px;
-  height: 90px;
+  padding: 30px;
   background-color: #F62AA0;
   border: none;
   border-radius: 20px;
@@ -520,9 +528,16 @@ html, body {
   justify-self: center;
   font-size: 20px;
 }
+@media (min-width: 768px) {
+  .price__button {
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 22px;
+    justify-self: right;
+  }
+}
 @media (min-width: 1025px) {
   .price__button {
-    justify-self: right;
     margin-right: 40px;
     font-size: 24px;
   }
@@ -531,26 +546,6 @@ html, body {
 .price__link {
   text-decoration: none;
   color: white;
-}
-
-.references__text {
-  font-family: "Libre Baskerville", serif;
-  padding: 0 40px;
-  font-style: italic;
-  font-size: 20px;
-}
-.references__text--second {
-  padding-top: 60px;
-}
-@media (min-width: 768px) {
-  .references__text {
-    font-size: 24px;
-  }
-}
-@media (min-width: 1025px) {
-  .references__text {
-    font-size: 26px;
-  }
 }
 
 .contact {
@@ -727,5 +722,25 @@ label {
 @media (min-width: 1025px) {
   .gallery__preview--tall {
     grid-row: span 1;
+  }
+}
+
+.references__text {
+  font-family: "Libre Baskerville", serif;
+  padding: 0 40px;
+  font-style: italic;
+  font-size: 20px;
+}
+.references__text--second {
+  padding-top: 60px;
+}
+@media (min-width: 768px) {
+  .references__text {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1025px) {
+  .references__text {
+    font-size: 26px;
   }
 }/*# sourceMappingURL=style.css.map */

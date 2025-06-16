@@ -76,6 +76,13 @@ html, body {
     display: block;
 }
 
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+.menu__item.open .submenu {
+  display: block;
+}
 
 .menu__link {
     display: block;
@@ -746,6 +753,12 @@ label {
   width: 100%;
   max-width: 100%;
   object-fit: cover;
+  object-position: center;
+  filter: grayscale(100%);
+}
+
+.gallery__preview:hover {
+    filter: none;
 }
 
 .gallery__preview--tall {

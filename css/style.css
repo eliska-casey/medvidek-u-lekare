@@ -465,7 +465,6 @@ html, body {
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 40px;
-  padding-left: 40px;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -477,6 +476,7 @@ html, body {
   .title__subheading {
     font-size: 48px;
     text-align: left;
+    padding-left: 40px;
   }
 }
 
@@ -485,7 +485,6 @@ html, body {
   font-family: "Libre Baskerville", serif;
   font-style: italic;
   font-size: 20px;
-  padding-left: 40px;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -497,6 +496,7 @@ html, body {
   .title__subsubheading {
     font-size: 24px;
     text-align: left;
+    padding-left: 40px;
   }
 }
 .title__subsubheading--bold {

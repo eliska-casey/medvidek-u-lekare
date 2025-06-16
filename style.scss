@@ -437,7 +437,6 @@ html, body {
     font-family: $font-headings;
     font-weight: 400;
     font-size: 40px;
-    padding-left: 40px;
     text-align: center;
     
     @media (min-width: 768px) {
@@ -446,7 +445,8 @@ html, body {
 
     @media (min-width: 1025px) {
     font-size: 48px;
-    text-align: left;}
+    text-align: left;
+    padding-left: 40px;}
 }
 
 .title__subsubheading {
@@ -454,7 +454,6 @@ html, body {
     font-family: $font;
     font-style: italic;
     font-size: 20px;
-    padding-left: 40px;
     text-align: center;
 
     @media (min-width: 768px) {
@@ -463,7 +462,8 @@ html, body {
 
     @media (min-width: 1025px) {
     font-size: 24px;
-    text-align: left;}
+    text-align: left;
+    padding-left: 40px;}
 
     &--bold {
     font-style: normal;

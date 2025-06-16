@@ -55,11 +55,35 @@ html, body {
   }
 }
 
+.menu__item--has-submenu {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #B8EE30;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.menu__item--has-submenu:hover .submenu {
+  display: block;
+}
+
 .menu__link {
   display: block;
   text-decoration: none;
   color: white;
   padding: 20px;
+  white-space: nowrap;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .menu__link {
@@ -336,7 +360,7 @@ html, body {
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "title" "info" "photo";
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .teacher-info {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
@@ -352,7 +376,6 @@ html, body {
 .teacher-info__text {
   grid-area: info;
   padding: 40px;
-  padding-top: 60px;
   font-family: "Libre Baskerville", serif;
   line-height: 2;
   font-size: 18px;
@@ -361,12 +384,12 @@ html, body {
 @media (min-width: 768px) {
   .teacher-info__text {
     font-size: 22px;
-    text-align: left;
   }
 }
 @media (min-width: 1025px) {
   .teacher-info__text {
     font-size: 24px;
+    text-align: left;
   }
 }
 
@@ -383,12 +406,13 @@ html, body {
 @media (min-width: 768px) {
   .teacher-info__photo {
     max-width: 400px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 1025px) {
   .teacher-info__photo {
     max-width: 600px;
+    margin-bottom: 0;
   }
 }
 
@@ -400,21 +424,32 @@ html, body {
 }
 .title__heading--left {
   text-align: center;
+  padding: 0 10px;
 }
 @media (min-width: 768px) {
   .title__heading--left {
     text-align: left;
-    padding-left: 60px;
+    padding-left: 40px;
   }
 }
 .title__heading--right {
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .title__heading--right {
     text-align: right;
-    padding-right: 60px;
+    padding-right: 40px;
     padding-top: 60px;
+  }
+}
+
+.title__heading--left-teacher {
+  text-align: center;
+}
+@media (min-width: 1025px) {
+  .title__heading--left-teacher {
+    text-align: left;
+    padding-left: 40px;
   }
 }
 
@@ -428,12 +463,12 @@ html, body {
 @media (min-width: 768px) {
   .title__subheading {
     font-size: 44px;
-    text-align: left;
   }
 }
 @media (min-width: 1025px) {
   .title__subheading {
     font-size: 48px;
+    text-align: left;
   }
 }
 
@@ -448,17 +483,32 @@ html, body {
 @media (min-width: 768px) {
   .title__subsubheading {
     font-size: 22px;
-    text-align: left;
   }
 }
 @media (min-width: 1025px) {
   .title__subsubheading {
     font-size: 24px;
+    text-align: left;
   }
 }
 .title__subsubheading--bold {
   font-style: normal;
   font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .title__subsubheading--bold {
+    font-size: 22px;
+    text-align: left;
+    padding-left: 40px;
+  }
+}
+@media (min-width: 1025px) {
+  .title__subsubheading--bold {
+    font-size: 24px;
+  }
 }
 
 .price {
@@ -467,7 +517,7 @@ html, body {
   grid-template-rows: repeat(3, auto);
   grid-template-areas: "title" "info" "button" "photo";
 }
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .price {
     margin-right: 60px;
     grid-template-columns: repeat(2, 1fr);
@@ -488,6 +538,7 @@ html, body {
 @media (min-width: 768px) {
   .price__photo {
     max-width: 400px;
+    padding-left: 20px;
   }
 }
 @media (min-width: 1025px) {
@@ -498,7 +549,7 @@ html, body {
 
 .price__info {
   grid-area: info;
-  padding: 40px;
+  margin-top: 0;
   font-family: "Libre Baskerville", serif;
   line-height: 2;
   text-align: center;
@@ -507,13 +558,13 @@ html, body {
 @media (min-width: 768px) {
   .price__info {
     font-size: 22px;
-    text-align: right;
-    padding-right: 0;
   }
 }
 @media (min-width: 1025px) {
   .price__info {
     font-size: 24px;
+    text-align: right;
+    padding: 0 40px;
   }
 }
 
@@ -532,14 +583,14 @@ html, body {
   .price__button {
     height: -moz-fit-content;
     height: fit-content;
-    font-size: 22px;
-    justify-self: right;
   }
 }
 @media (min-width: 1025px) {
   .price__button {
     margin-right: 40px;
     font-size: 24px;
+    justify-self: right;
+    margin-right: 40px;
   }
 }
 
@@ -551,7 +602,7 @@ html, body {
 .contact {
   background-color: rgba(249, 208, 48, 0.48);
   padding: 40px;
-  margin: 60px;
+  margin: 40px;
   border-radius: 20px;
   font-family: "Libre Baskerville", serif;
   display: grid;
@@ -562,8 +613,14 @@ html, body {
 }
 @media (max-width: 768px) {
   .contact {
+    margin: 20px;
     grid-template-columns: 1fr;
     grid-template-areas: "name" "surname" "tel" "email" "classes" "number" "age" "address" "street" "town" "psc" "note" "submit";
+  }
+}
+@media (min-width: 1025px) {
+  .contact {
+    margin: 0 60px;
   }
 }
 
@@ -729,14 +786,16 @@ label {
   font-family: "Libre Baskerville", serif;
   padding: 0 40px;
   font-style: italic;
+  text-align: center;
   font-size: 20px;
-}
-.references__text--second {
-  padding-top: 60px;
 }
 @media (min-width: 768px) {
   .references__text {
     font-size: 24px;
+    text-align: left;
+  }
+  .references__text--second {
+    padding-top: 40px;
   }
 }
 @media (min-width: 1025px) {

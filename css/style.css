@@ -20,6 +20,16 @@ html, body {
 
 .header {
   background-color: #26DFD0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+  border-radius: 100px;
+  margin-right: 20px;
 }
 
 .menu {
@@ -34,8 +44,8 @@ html, body {
   .menu {
     display: flex !important;
     justify-content: space-between;
-    padding: 15px 25px;
-    gap: 10px;
+    padding: 0px 25px;
+    gap: 20px;
   }
 }
 

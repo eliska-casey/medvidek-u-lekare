@@ -110,6 +110,7 @@ html, body {
 
 .menu__link {
   display: block;
+  width: 100%;
   text-decoration: none;
   color: white;
   padding: 20px;

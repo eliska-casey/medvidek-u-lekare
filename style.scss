@@ -93,6 +93,7 @@ html, body {
     font-weight: normal;
 }
 
+
 .menu__item--has-submenu:hover .submenu {
     display: block;
 }
@@ -107,6 +108,7 @@ html, body {
 
 .menu__link {
     display: block;
+    width: 100%;
     text-decoration: none;
     color: white;
     padding: 20px;

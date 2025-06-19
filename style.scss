@@ -24,9 +24,6 @@ html, body {
 
 .header {
     background-color: $primary-blue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: relative;
 }
 
@@ -56,9 +53,9 @@ html, body {
     padding: 0;
     @media (min-width: 1025px) {
     display: flex !important;
-    justify-content: space-between;
+    justify-content: left;
     padding: 0px 25px;
-    gap: 20px;}
+    gap: 40px;}
 }
 
 .menu__item {
@@ -708,7 +705,7 @@ label {
     background-color: $primary-pink;
     color: white;
     padding: 20px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: $font;
     border: $primary-pink;
     border-radius: 20px;
@@ -717,10 +714,10 @@ label {
     }
     
     @media (min-width: 768px) {
-    font-size: 22px;}
+    font-size: 20px;}
 
     @media (min-width: 1025px) {
-    font-size: 24px;}
+    font-size: 22px;}
 }
 
 .contact input, textarea {

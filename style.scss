@@ -90,6 +90,17 @@ html, body {
     font-weight: normal;
 }
 
+.menu__item-with-arrow {
+    display: flex;
+    position: relative;
+     &:hover .submenu {
+    display: block;
+  }
+}
+.arrow-down {
+    width: 10px;
+    height: auto;
+}
 
 .menu__item--has-submenu:hover .submenu {
     display: block;

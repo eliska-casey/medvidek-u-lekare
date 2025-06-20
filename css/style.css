@@ -101,11 +101,6 @@ html, body {
   display: block;
 }
 
-.arrow-down {
-  width: 10px;
-  height: auto;
-}
-
 .menu__item--has-submenu:hover .submenu {
   display: block;
 }
@@ -158,6 +153,12 @@ html, body {
 .menu__icon {
   height: 40px;
   width: 40px;
+  filter: brightness(0) invert(1);
+}
+
+.menu__arrow {
+  height: 30px;
+  width: 30px;
   filter: brightness(0) invert(1);
 }
 
